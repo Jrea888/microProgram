@@ -1,0 +1,4 @@
+/* page/home/home.wxss */
+.title{
+  font-weight: bold
+}
