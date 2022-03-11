@@ -2,5 +2,25 @@
   "pages": [
     "page/home/home",
     "page/about/about"
-  ]
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "page/home/home",
+        "text": "Home"
+      },
+      {
+        "pagePath": "page/about/about",
+        "text": "About"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
 }

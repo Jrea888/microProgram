@@ -1,2 +1,4 @@
 <!--page/about/about.wxml-->
-<text>page/about/about.wxml</text>
+<view>
+  <h2 class="title">About Page</h2>
+</view>
