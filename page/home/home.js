@@ -1,8 +1,7 @@
 // page/home/home.js
 const app = getApp();
-
 console.log(app.globalData)
-
+// 注册一个页面
 Page({
   getUserInfoHandle(event){
     console.log(event)

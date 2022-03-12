@@ -1,13 +1,15 @@
+// 注册一个小程序示例
 App({
 
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
+   * 获取用户信息
    */
-  onLaunch: function() {
-    console.log("请求网络，初始化数据...")
+  onLaunch: function(options) {
+    console.log("options--->", options)
     wx.getUserInfo({
       success: function(res) {
-        console.log(res)
+        console.log("请求网络，初始化数据...", res)
       }
     })
   },
@@ -16,12 +18,16 @@ App({
    * 当小程序启动，或从后台进入前台显示，会触发 onShow
    */
   onShow: function(options) {
-    console.log("小程序已经进入了...")
-    wx.getUserInfo({
-      success:function(res){
-        console.log(res)
-      }
-    })
+    console.log(options)
+    switch (options.scene) {
+      case 1001:
+        console.log("1001")
+        break;
+      case 1005:
+        console.log("1005")
+        break;
+    }
+
   },
 
   /**
@@ -36,9 +42,9 @@ App({
    */
   onError: function(msg) {
 
-  }, 
-  globalData:{
-    name:"张伟刚",
-    age:24
+  },
+  globalData: {
+    name: "张伟刚",
+    age: 24
   }
 })
