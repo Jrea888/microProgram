@@ -36,5 +36,9 @@ App({
    */
   onError: function(msg) {
 
+  }, 
+  globalData:{
+    name:"张伟刚",
+    age:24
   }
 })

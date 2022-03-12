@@ -1,4 +1,8 @@
 // page/home/home.js
+const app = getApp();
+
+console.log(app.globalData)
+
 Page({
   getUserInfoHandle(event){
     console.log(event)
