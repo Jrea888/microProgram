@@ -1,0 +1,11 @@
+<!--page/scrollview/scrollview.wxml-->
+<text>page/scrollview/scrollview.wxml</text>
+
+<scroll-view class="wrap" scroll-x>
+  <image wx:for="{{10}}" src="https://s11.mogucdn.com/mlcdn/c45406/180824_460d7i6a17ei8287cdhae2igikj55_640x960.jpg"></image>
+</scroll-view> 
+
+
+<scroll-view class="image2" scroll-y bindscrolltolower="bindBottom">
+  <image  wx:for="{{10}}" src="https://s11.mogucdn.com/mlcdn/c45406/180824_460d7i6a17ei8287cdhae2igikj55_640x960.jpg"></image>
+</scroll-view> 

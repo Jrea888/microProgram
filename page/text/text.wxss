@@ -1,11 +1,10 @@
-/* page/home/home.wxss */
-
+/* page/text/text.wxss */
 
 .title {
   font-weight: bold;
 }
 
-text{
+text {
   display: inline-block;
-  background: palegreen
+  background: palegreen;
 }

@@ -1,0 +1,9 @@
+<!--page/button/button.wxml-->
+<view>按钮使用</view>
+<!-- open-type的取值 -->
+<button size="mini" open-type="contact" bindcontact="onContact">客服会话</button>
+<button size="mini" open-type="share">程序分享</button>
+<button size="mini" open-type="getPhoneNumber" bindgetphonenumber="onGetPhoneNumber">获取电话</button>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">用户信息</button>
+<button 	hover-class="bgc">按下背景色改变</button>
+

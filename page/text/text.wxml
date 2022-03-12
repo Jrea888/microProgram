@@ -9,23 +9,24 @@
 
 <!-- 是否可选中  selectable 默认是false-->
 <view>
-  <text selectable>可选中的文本Text</text>
+  <text user-select>可选中的文本Text</text>
 </view>
 <!-- 空格 -->
 <view>
-<!-- 根据字体设置的空格大小 -->
+  <!-- 根据字体设置的空格大小 -->
   <text space="nbsp">文本 Text</text>
 </view>
 <view>
-<!-- 半个汉字 -->
+  <!-- 半个汉字 -->
   <text space="ensp">文本 Text</text>
 </view>
 <view>
-<!-- 一个汉字 -->
+  <!-- 一个汉字 -->
   <text space="emsp">文本 Text</text>
 </view>
 
 <!-- 是否解码 -->
 <view>
- <text decode>5 &gt; 3</text>
+  <text decode>5 &gt; 3</text>
 </view>
+

@@ -1,0 +1,20 @@
+/* page/view/view.wxss */
+.con1{
+  width: 200px;
+  height: 200px;
+  background: forestgreen
+}
+
+.con2{
+  width: 100px;
+  height: 100px;
+  background: rgb(22, 110, 182)
+}
+
+.con1-hover{
+  background: red
+}
+
+.con2-hover{
+  background: orange
+}

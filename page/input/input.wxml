@@ -1,0 +1,6 @@
+<!--page/input/input.wxml-->
+<text>page/input/input.wxml</text>
+<input type="text" placeholder="普通文本"></input>
+<input type="safe-password" placeholder="密码输入"></input>
+<input type="number" placeholder="数字输入"></input>
+<input type="idcard" placeholder="身份证件"></input>

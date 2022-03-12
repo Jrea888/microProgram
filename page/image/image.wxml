@@ -1,0 +1,11 @@
+<!--page/image/image.wxml-->
+<text>page/image/image.wxml</text>
+
+<button bindtap="handleChooseImage">选中图片</button>
+<image src="{{imagePath}}"></image>
+
+
+<image wx:for="{{10}}" 
+       src="https://s11.mogucdn.com/mlcdn/c45406/171029_0fi40bgcb3772kf033bhei621ak6k_640x960.jpg"
+       bindload="imageLoad"
+       lazy-load></image>

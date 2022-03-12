@@ -1,0 +1,6 @@
+<!--page/view/view.wxml-->
+<text>page/view/view.wxml</text>
+<!-- 	hover-stop-propagation 指定是否阻止本节点的祖先节点出现 点击态 -->
+<view class="con1" hover-class="con1-hover">
+  <view class="con2" hover-class="con2-hover" hover-stop-propagation>conin</view>
+</view>
