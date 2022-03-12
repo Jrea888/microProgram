@@ -1,5 +1,8 @@
 // page/home/home.js
 Page({
+  getUserInfoHandle(event){
+    console.log(event)
+  },
 
   /**
    * 页面的初始数据

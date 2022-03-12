@@ -4,7 +4,7 @@ App({
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function() {
-    console.log("123")
+    console.log("请求网络，初始化数据...")
     wx.getUserInfo({
       success: function(res) {
         console.log(res)
@@ -16,6 +16,7 @@ App({
    * 当小程序启动，或从后台进入前台显示，会触发 onShow
    */
   onShow: function(options) {
+    console.log("小程序已经进入了...")
     wx.getUserInfo({
       success:function(res){
         console.log(res)

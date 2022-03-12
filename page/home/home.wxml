@@ -1,4 +1,5 @@
 <!--page/home/home.wxml-->
 <view>
   <h2 class="title">Home Page</h2>
+  <button size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandle">获取用户信息</button>
 </view>
