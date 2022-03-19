@@ -1,0 +1,14 @@
+// 必须使用相对路径引用其他的王wxs文件
+var item = require('./item.wxs')
+
+var message = "wxs文件中的独立模块，消息"
+
+function add(a,b){
+  return a + b
+}
+console.log(add(item.num,item.num))
+
+module.exports = {
+  message:message,
+  add:add
+}

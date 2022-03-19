@@ -1,4 +1,6 @@
 /* page/home/home.wxss */
-.title{
-  font-weight: bold
+@import '../../style/index.wxss';
+
+.text{
+  font-size: 48px;
 }

@@ -1,0 +1,14 @@
+<!--page/wxs/wxs.wxml-->
+<view class="title">WXS语法使用</view>
+<view>使用单独的文件引用</view>
+
+<wxs src="/wxs/index.wxs" module="info"></wxs>
+<wxs src="../../wxs/formatTime.wxs" module="formatTime"></wxs>
+
+<view>{{ info.message }}</view>
+<view>2 + 3 = {{info.add(2,3)}}</view>
+<view class="title"> 时间格式化:传入时间戳 </view>
+<view>{{formatTime.dateFormate(times,"yyyy-mm-dd")}}</view>
+
+<view class="title">价格格式化：保留两位小数</view>
+<view>￥{{formatTime.priceFormat(prices,2)}}</view>

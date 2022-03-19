@@ -1,24 +1,20 @@
-// page/home/home.js
+// page/wxs/wxs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:new Date().toLocaleString()
+    message:"我是动态数据",
+    times:1647687654,
+    prices:258.156
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(new Date().toLocaleString())
-    var self = this;
-    setInterval(function(){
-      self.setData({
-        time:new Date().toLocaleString()
-      })
-    },1000)
+
   },
 
   /**

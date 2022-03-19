@@ -1,0 +1,7 @@
+<template name="poetry">
+  <view class="title">{{titleName}}</view>
+  <view>远看山无色，</view>
+  <view>近听水无声。</view>
+  <view>春去花还在，</view>
+  <view>人来鸟不惊。</view>
+</template>

@@ -1,0 +1,14 @@
+<!--page/template/template.wxml-->
+<import src="../../template/content.wxml" />
+<include src="../../template/header.wxml"></include>
+<view>
+  <h2 class="title">Template 的复用</h2>
+</view> 
+
+<view>
+  <view class="title">我是标题</view>
+  <p>我是内容，以下内容是复用template</p>
+  <template is="poetry" data="{{ titleName:'古诗' }}"></template>
+</view>
+
+<include src="../../template/footer.wxml"></include>

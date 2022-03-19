@@ -1,0 +1,9 @@
+.text{
+  font-size: 58px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 22px;
+}
+

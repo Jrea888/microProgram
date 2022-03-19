@@ -1,4 +1,16 @@
 <!--page/home/home.wxml-->
 <view>
   <h2 class="title">Home Page 123</h2>
+  <text class="text" style="font-size:32px">我是一个文本</text>
+  <text class="text" >我是一个文本</text>
+  <text class="text" >我是一个文本</text>
 </view>
+<view class="header">
+  我是外部样式来控制的
+</view>
+<view>
+  <h2>时间显示：</h2>
+  <text>{{time}}</text>
+</view>
+
+<map longitude="108.946881" latitude="34.35435"></map>

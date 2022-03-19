@@ -1,0 +1,21 @@
+<!--page/inout/inout.wxml-->
+<h2 class="title">语法练习</h2>
+<block wx:if="{{true}}">
+  <p>大于三的存在</p>
+</block>
+<view>
+  <h2 class="title">遍历数组</h2>
+  <block wx:for="{{list}}" wx:for-item="sub" wx:for-index="index" wx:key="sub">
+    <view>{{index}}-{{sub}}</view>
+  </block>
+  <h2 class="title">遍历字符串</h2>
+  <block wx:for="{{message}}" wx:for-item="sub" wx:for-index="index" wx:key="sub">
+    <view>{{index}}-{{sub}}</view>
+  </block>
+  <h2 class="title">遍历数字</h2>
+  <block wx:for="{{num}}" wx:for-item="sub" wx:for-index="index" wx:key="sub">
+    <view>{{index}}-{{sub}}</view>
+  </block>
+</view>
+
+

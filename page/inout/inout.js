@@ -1,24 +1,20 @@
-// page/home/home.js
+// page/inout/inout.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:new Date().toLocaleString()
+    list:["a","b","c","d"],
+    num:10,
+    message:"所遇皆所求"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(new Date().toLocaleString())
-    var self = this;
-    setInterval(function(){
-      self.setData({
-        time:new Date().toLocaleString()
-      })
-    },1000)
+
   },
 
   /**

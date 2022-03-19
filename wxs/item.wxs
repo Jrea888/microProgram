@@ -1,0 +1,7 @@
+var num = 4;
+var flag = true
+
+module.exports = {
+  num:num,
+  flag:flag
+}
