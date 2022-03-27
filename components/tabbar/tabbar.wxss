@@ -1,0 +1,16 @@
+/* components/tabbar.wxss */
+.tar-bar{
+  display: flex;
+  text-align: center;
+  background-color: rgb(248, 178, 178);
+}
+.tar-bar .item {
+  flex: 1;  
+  height: 45px;
+  line-height: 45px;
+}
+.active {
+  color: green;
+  padding: 9px 10px;
+  border-bottom:3px solid green ;
+}

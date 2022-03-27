@@ -1,0 +1,8 @@
+<!--components/tabbar.wxml-->
+<view class="tar-bar">
+  <block wx:for="{{listTab}}" wx:key="item">
+    <view class="item" bindtap="clickHandle" data-index="{{index}}">
+      <text class=" {{currentIndex == index ? 'active':''}}">{{item}}</text>
+    </view>
+  </block>
+</view>

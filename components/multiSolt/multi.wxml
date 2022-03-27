@@ -1,0 +1,5 @@
+<!--components/mulitSolt/mulit.wxml-->
+<view>多插槽的头部</view>
+<slot name="title"></slot>
+<slot name="content1"></slot>
+<view>多插槽的脚部</view>

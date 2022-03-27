@@ -1,11 +1,41 @@
 // page/home/home.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    message:"数据传递",
+    num:0,
+    list:["时尚","流行","经典"],
+    showString:"时尚",
+    isShowHide:true
+  },
+  incrementHandle(params){
+    console.log(params.detail)
+    this.setData({
+      num : params.detail.a++
+    })
+  },
+  tarTitleHandle(params){
+    console.log(params.detail)
+    this.setData({
+      showString:params.detail.name
+    })
+  },
+  onClick(){
+    const subItem =  this.selectComponent('#sub-item')
+    subItem.doClick()
+  },
+  pageLifetimes:{
+    show(){
+      console.log("监听组件在页面显示出来时")
+    },
+    hide(){
+      console.log("监听组件在页面隐藏起来时")
+    },
+    resize(){
+      console.log("监听页面的尺寸的改变")
+    }
   },
 
   /**

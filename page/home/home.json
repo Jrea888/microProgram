@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Header":"/components/header/header",
+    "content-item":"/components/content/content-item",
+    "tab-bar":"/components/tabbar/tabbar",
+    "sub-item":"/components/subItem/subItem",
+    "single-cpn":"/components/singleSlot/single",
+    "multiple-cpm":"/components/multiSolt/multi",
+    "show-hide":"/components/showHide/showHide"
+
+  }
 }

@@ -1,0 +1,4 @@
+<!--components/singleSlot/single.wxml-->
+<view>插槽的头部</view>
+<slot></slot>
+<view>插槽的脚部</view>

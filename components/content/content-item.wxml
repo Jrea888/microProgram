@@ -1,0 +1,8 @@
+<!--components/content/ContentItem.wxml-->
+<view>
+  <text>内容文字图文部分</text>
+  <view>动态传递值:父传子</view>
+  <view>{{itemInfo}}</view>
+  <view>事件传递</view>
+  <button size="mini" bindtap="incrementHandle">+1</button>
+</view>

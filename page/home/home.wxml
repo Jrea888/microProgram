@@ -1,4 +1,28 @@
 <!--page/home/home.wxml-->
 <view>
-  <h2 class="title">Home Page</h2>
+  <h2 class="title">自定义组件的使用</h2>
+  <Header></Header>
+  <content-item itemInfo="{{message}}" bind:increment="incrementHandle"></content-item>
+  <view>{{num}}</view>
+  <h2 class="title">Tabbar组件封装</h2>
+  <tab-bar listTab="{{list}}" bind:tarTitle="tarTitleHandle"></tab-bar>
+  <view>{{showString}}</view>
+  <button size="mini" bind:tap="onClick">调用组件方法</button>
+  <sub-item id="sub-item"></sub-item>
+  <view>插槽的使用----》单插槽</view>
+  <single-cpn>
+    <p>内容部分</p>
+  </single-cpn> 
+  <single-cpn>
+    <p>内容部分</p>
+  </single-cpn>
+  <view>插槽的使用----》多插槽</view>
+  <multiple-cpm>
+    <h2 slot="title">标题</h2>
+    <view slot="content1">内容1</view>
+  </multiple-cpm>
+  <button bind:tap="">隐藏/显示组件</button>
+  <block >
+    <show-hide></show-hide>
+  </block>
 </view>

@@ -1,0 +1,4 @@
+<!--components/Header.wxml-->
+<view>
+  <h2 class="title">标题文字组件</h2>
+</view>
