@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log("页面传参-->",options)
   },
 
   /**
@@ -40,7 +40,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const pages = getCurrentPages();
+    console.log(pages)
+    const home = pages[pages.length - 2]
+    home.setData({
+      msg:'Message'
+    })
   },
 
   /**

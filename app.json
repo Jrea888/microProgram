@@ -2,5 +2,7 @@
   "pages": [
     "page/home/home",
     "page/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
+
 }

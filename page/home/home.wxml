@@ -2,3 +2,18 @@
 <view>
   <h2 class="title">Home Page</h2>
 </view>
+
+<button bind:tap="showToast">弹窗showToast</button>
+<button bind:tap="showModal">弹窗showModal</button>
+<button bind:tap="showLoading">弹窗showLoading</button>
+
+<navigator url="/page/about/about">跳转到关于页面</navigator>
+ 
+<navigator url="/page/about/about" open-type="switchTab">跳转到关于页面(switchTab)</navigator>
+
+<navigator url="/page/about/about?name=coder&age=18">跳转到关于页面(传参数)</navigator>
+
+<view>{{msg}}</view>
+
+<button bind:tap="doClickInfo">点击传参数</button>
+<button bind:tap="doClick">点击不传参</button>

@@ -1,2 +1,3 @@
 <!--page/about/about.wxml-->
 <text>page/about/about.wxml</text>
+<navigator open-type="navigateBack">返回</navigator>
