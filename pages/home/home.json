@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tab-control":"/components/TabControl/tab-control",
+    "good-list":"/components/GoodList/goodlist",
+    "week-popular":"./component/week-popular"
+  }
+}

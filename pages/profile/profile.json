@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header":"./component/Header/header",
+    "user-info":"./component/UserInfo/user-info",
+    "list-view":"./component/ListView/list-view"
+  }
+}

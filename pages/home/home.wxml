@@ -1,0 +1,31 @@
+<!--page/home/home.wxml-->
+<view class="app">
+  <swiper autoplay  
+          indicator-dots="true" 
+          circular='true'
+          interval='3000'
+          indicator-active-color='#ff5777'
+          class="swiper">
+    <block wx:for-item="item" wx:for="{{bannersImage}}" wx:key="index" >
+      <swiper-item> 
+        <image class="banner-image" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="recommed">
+    <block wx:for-item="item" wx:for="{{recommends}}" wx:key="index">
+      <view class="recommed-item">
+        <image class="recommed-image" src="{{item.image}}"></image>
+        <view class="recommed-text">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <week-popular/>
+  
+  <tab-control class='tab-control' titles="{{titles}}" bind:tabclick="tabClickHandle"></tab-control>
+
+  <good-list class="good-list" goodlist="{{goods[currentType].list}}"></good-list>
+
+</view>

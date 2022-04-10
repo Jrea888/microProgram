@@ -1,0 +1,50 @@
+/* pages/profile/component/Header/header.wxss */
+
+.header{
+  width: 100%;
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  background: #ff5777;
+  padding: 12rpx 30rpx;
+}
+
+.header .avatar{
+  flex: 1;
+}
+
+.header .avatar .image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header .login-info{
+  flex: 4;
+  margin-left: 28rpx;
+}
+
+.header .login-info .phone{
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+}
+
+.header .login-info .text{
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.header .login-info .user-name{
+  color: #fff;
+}
+
+.header .arrow{
+  flex: 1;
+}
+
+.header .arrow .arrow-right{
+  width: 60rpx;
+  height: 60rpx;
+}

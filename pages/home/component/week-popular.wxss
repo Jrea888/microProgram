@@ -1,0 +1,4 @@
+/* pages/home/component/week-popular.wxss */
+.week-popular .image{
+  width: 100%;
+}

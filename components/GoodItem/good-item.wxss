@@ -1,0 +1,25 @@
+/* components/GoodItem/good-item.wxss */
+.good-item .good-image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.good-item .description .good-title {
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.good-item .description .price {
+  font-size: 28rpx;
+  color: #ff5777;
+}
+.good-item .description .icon {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  padding: 0 4rpx;
+}
+.good-item .description .cfav{
+  font-size: 28rpx;
+}

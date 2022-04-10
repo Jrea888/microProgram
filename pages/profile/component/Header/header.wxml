@@ -1,0 +1,16 @@
+<!--pages/profile/component/Header/header.wxml-->
+<view class="header">
+  <view class="avatar">
+    <image class="image" src="/assets/images/profile/avatar.png"></image>
+  </view>
+  <view class="login-info">
+    <view class="user-name">购物小专家</view>
+    <view>
+      <image class="phone" src="/assets/images/profile/phone.png"></image>
+      <text class="text">18142425639</text>
+    </view>
+  </view>
+  <view class="arrow">
+    <image class="arrow-right" src="/assets/images/common/arrow-right.png"></image>
+  </view>
+</view>

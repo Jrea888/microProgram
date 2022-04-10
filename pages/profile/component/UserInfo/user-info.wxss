@@ -1,0 +1,29 @@
+/* pages/profile/component/UserInfo/user-info.wxss */
+
+.user-info{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #f8f8f8; 
+}
+
+.user-info .text-number{
+  font-size: 40rpx;
+  color: #ff5777;
+  font-weight: 700;
+}
+
+.user-info .span,.text-title{
+  font-size: 28rpx;
+  color: #999;
+}
+
+.user-info .text-title{
+  display: block;
+}
+
+.user-info .amount,.discount,.integral {
+  width: 33%;
+  background: #fff;
+  padding: 50rpx 0;
+}

@@ -1,0 +1,4 @@
+<!--pages/home/component/week-popular.wxml-->
+<view class="week-popular">
+  <image class="image" src="/assets/images/home/recommend_bg.jpg"></image>
+</view>

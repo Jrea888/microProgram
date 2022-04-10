@@ -1,0 +1,18 @@
+<!--pages/profile/component/UserInfo/user-info.wxml-->
+<view class="user-info">
+  <view class="amount">
+    <text class="text-number">520</text>
+    <span class="span">元</span>
+      <text class="text-title">我的余额</text>
+  </view>
+  <view class="discount">
+    <text class="text-number">6</text>
+    <span class="span">个</span>
+    <text class="text-title">我的优惠</text>
+  </view>
+  <view class="integral">
+    <text class="text-number">1314</text>
+    <span class="span">分</span>
+    <text class="text-title">我的积分</text>
+  </view>
+</view>

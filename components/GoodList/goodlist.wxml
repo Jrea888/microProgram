@@ -1,0 +1,6 @@
+<!--components/GoodList/goodlist.wxml-->
+<view class="good-list">
+  <block wx:for="{{goodlist}}" wx:key="index">
+    <good-item class="good-item" goods="{{item}}"></good-item>
+  </block>
+</view>

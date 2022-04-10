@@ -1,0 +1,4 @@
+/* page/profile/profile.wxss */
+.profile{
+  height: 100%;
+}
