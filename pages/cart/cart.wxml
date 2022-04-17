@@ -1,2 +1,16 @@
 <!--page/cart/cart.wxml-->
-<text>page/cart/cart.wxml</text>
+<view class="cart"> 
+  <view wx:if="{{length > 0}}">
+    <block wx:for="{{cartList}}" wx:key="index">
+      <image class="cart-image" src="{{item.imageUrl}}" mode='aspectFill'></image>
+      <view class="cart-title">{{item.title}}</view>
+      <view class="desc">{{item.desc}}</view>
+      <view class='price-count'>
+        <view class='price'>¥{{item.price}}</view>
+        <view class='count'>x{{item.counter}}</view>
+      </view>
+    </block>
+  </view> 
+  <view wx:else>暂无商品</view> 
+</view>
+

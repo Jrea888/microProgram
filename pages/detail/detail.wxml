@@ -1,0 +1,52 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <swiper autoplay  
+          indicator-dots="true" 
+          circular='true'
+          interval='3000'
+          indicator-active-color='#ff5777'
+          class="detail-swiper">
+    <block wx:for-item="item" wx:for="{{topBannerImages}}" wx:key="index" >
+      <swiper-item> 
+        <image class="banner-image" src="{{item}}" mode='widthFix'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="height">
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。456
+  </view>
+
+</view>
+
+<view class="detail-bottom-bar">
+  <view class="bar-left">
+    <view class="left-item">
+      <image class="image" src="../../assets/images/detail/service.png"></image>
+      <view>客服</view>
+    </view>
+    <view class="left-item">
+      <image class="image" src="../../assets/images/detail/shop.png"></image>
+      <view>店铺</view>
+    </view>
+    <view class="left-item">
+      <image class="image" src="../../assets/images/detail/collect.png"></image>
+      <view>收藏</view>
+    </view>
+  </view>
+  <view class="bar-right">
+    <view class="right-item cart" bind:tap="onAddCart">加入购物车</view>
+    <view class="right-item buy">购买</view>
+  </view>
+</view>

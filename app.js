@@ -1,4 +1,25 @@
 App({
+  // 全局变量
+  globalData:{
+    cartList:[]
+  },
+  // 全局触发函数
+  addToCart(obj){
+    const oldGoods = this.globalData.cartList.find(item => item.iid === obj.iid)
+    
+    if(oldGoods){
+      oldGoods.counter += 1;
+    } else {
+      obj.counter = 1;
+      obj.checked = true;
+      this.globalData.cartList.push(obj)
+    }
+
+    // 执行回调
+    if(this.addCartCallBack){
+      this.addCartCallBack()
+    }
+  },
 
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）

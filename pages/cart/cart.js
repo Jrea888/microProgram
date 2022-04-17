@@ -1,20 +1,58 @@
 // page/cart/cart.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    cartList:[],
+    totalPrice:0,
+    totalCounter:0,
+    length:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(app.globalData.cartList)
+    // 1.初始化数据
+    this.setData({
+      cartList:app.globalData.cartList,
+      length:app.globalData.cartList.length
+    })
+
+
+    // 2.设置回调
+    app.addCartCallBack = () => {
+      this.setData({
+        cartList:app.globalData.cartList
+      })
+      this.changeData()
+    }
 
   },
+  changeData(){
+     // 获取选中的数据
+     let totalPrice = 0;
+     let counter = 0;
 
+     for(let item of this.data.cartList){
+       if(item.checked){
+         counter++;
+         totalPrice += item.price *  item.counter;
+       }
+     }
+
+     console.log(totalPrice,counter)
+
+     // 修改数据
+     this.setData({
+       totalPrice:totalPrice,
+       totalCounter:counter
+     })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

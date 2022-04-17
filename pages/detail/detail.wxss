@@ -1,0 +1,55 @@
+/* pages/detail/detail.wxss */
+.detail{    
+  margin-bottom: 120rpx;
+}
+.detail-swiper{
+  height: 720rpx;
+}
+
+.detail-swiper .banner-image{
+  width: 100%;
+}
+
+.detail-bottom-bar{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  font-size: 30rpx;
+  box-shadow: 0 -1px 1px rgba(100, 100, 100, .2);
+}
+.bar-left{
+  flex: 1;
+  display: flex;
+  background-color: #fff;
+}
+.left-item{
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left-item .image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-bottom: 4rpx;
+}
+
+.bar-right{
+  flex: 1;
+  display: flex;
+  text-align: center;
+  line-height: 120rpx;
+}
+.bar-right .right-item{
+  flex: 1; 
+}
+.bar-right .cart{
+  background-color: #ffe817;
+}
+.bar-right .buy{
+  background-color: #ff5777;
+  color: #fff;
+}
